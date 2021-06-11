@@ -1,0 +1,58 @@
+.modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+}
+
+.gameOver {
+  font-size: 100px;
+  margin-bottom: 60px;
+}
+
+.points {
+  font-size: 32px;
+}
+
+.gameOverMessage {
+  font-size: 32px;
+}
+
+.quoteName {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.btn {
+  color: white;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(to right bottom, #ae8d0b, #f9d77e);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .gameOver {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .points {
+    font-size: 26px;
+  }
+
+  .gameOverMessage {
+    font-size: 26px;
+  }
+}

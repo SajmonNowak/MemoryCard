@@ -1,0 +1,61 @@
+.card {
+  margin: 20px;
+  text-align: center;
+  animation: createCard 0.25s;
+}
+
+@keyframes createCard {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    &:hover {
+      transform: scale(1.1);
+      .cardTitle {
+        color: gold;
+      }
+
+      img {
+        border-color: gold;
+        box-sizing: content-box;
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(to right bottom, #ae8d0b, #f9d77e);
+        border-image-slice: 1;
+      }
+    }
+  }
+}
+.cardTitle {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.cardImg {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
+@media all and (max-width: 600px) {
+  .card {
+    margin: 10px;
+  }
+
+  .cardImg {
+    height: 150px;
+    width: 100px;
+  }
+
+  .score {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}

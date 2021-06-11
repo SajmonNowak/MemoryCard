@@ -1,0 +1,47 @@
+.main {
+  min-height: calc(100vh - 190px);
+  position: relative;
+}
+
+.fieldContainer {
+  width: 100%;
+}
+
+.gameField {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.gameInfo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.level {
+  font-size: 48px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.score {
+  margin-left: auto;
+  font-size: 24px;
+  margin-right: 50px;
+}
+
+@media all and (max-width: 600px) {
+  .level {
+    font-size: 38px;
+  }
+
+  .score {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
