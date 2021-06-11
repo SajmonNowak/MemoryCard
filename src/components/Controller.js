@@ -28,6 +28,10 @@ const Controller = () => {
     "Charles",
     "Mosley",
     "Hughes",
+    "Tatiana",
+    "Churchill",
+    "Freddie",
+    "Bonnie",
   ];
 
   const [currentCard, setCurrentCard] = useState(null);
@@ -54,7 +58,7 @@ const Controller = () => {
     if (selectedCards.includes(currentCard)) {
       gameOver();
       return;
-    } else if (round + 1 === 4 * level + (level - 1) * 4) {
+    } else if (selectedCards.length === 4 * level - 1) {
       if (level === 5) {
         gameWon();
       } else {
